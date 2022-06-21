@@ -1,0 +1,38 @@
+.outlined-btn {
+    display: inline-block;
+    padding: 17px 0;
+    background: transparent;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 2px solid #FFFFFF;
+    color: #ffffff;
+    cursor: pointer;
+    /* background: none; */
+}
+
+@media screen and (max-width:1200px) {
+    .outlined-btn {
+        padding: 13px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .outlined-btn {
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:560px) {
+    .outlined-btn {
+        width: 100%;
+    }
+}
+
+.outlined-btn:hover {
+    border-color: #EC7979;
+    color: #EC7979;
+
+}

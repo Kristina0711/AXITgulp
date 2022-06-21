@@ -1,0 +1,48 @@
+/* FOOTER */
+
+.footer {
+    background: #000000;
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        margin: 0 calc(var(--gutter) * -1);
+    }
+    
+    &__icon-logo-item {
+        margin-top: 40px;
+        margin-bottom: 33px;
+        width: calc(100% / 12 * 6 - var(--gutter) * 2);
+        text-align: center;
+    }
+
+    .svg path:hover {
+        fill: #EC7979;
+        
+        @media screen and (max-width: 768px) {
+            height: 17px;
+            width: 17px;
+     }
+    
+    }
+    
+&__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 16px
+}
+}
+
+}
+
+
+
+
+

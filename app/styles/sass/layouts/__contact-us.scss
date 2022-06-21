@@ -1,0 +1,70 @@
+.contact-us {
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+       padding-top: 40px;
+  }
+
+  &__row {
+    padding-top: 25px;
+  }
+
+
+  &__card {
+    margin-bottom: 50px;
+    max-width: 100%;
+  
+    @media screen and (max-width: 768px) {
+    
+      margin-left: var(--gutter);
+  }
+  }
+
+  &__card-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  
+  }
+  
+  &__card-item:first-child {
+    padding-top: 0;
+  }
+  
+  &__card-text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    color: #BDBDBD;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    width: 100%;
+  
+  }
+  
+  &__send {
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  &__btn {
+    padding: 22px 120px;
+    @media screen and (max-width: 768px) {
+      padding: 20px 90px;
+  }
+  
+  }
+  
+
+
+}
+
+
+
+
+
+

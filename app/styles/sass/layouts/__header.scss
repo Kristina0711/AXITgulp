@@ -1,0 +1,158 @@
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 3;
+  background: #000000;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo-link {
+    z-index: 1;
+  }
+
+  &__nav {
+    align-self: center;
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    &_opened {
+      @include breakpoint(md) {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #000;
+        .header__menu {
+          flex-direction: column;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__menu-item {
+    margin-right: 40px;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  &__submenu-item {
+    padding: 20px 0;
+    position: relative;
+  }
+
+  &__submenu-sub-item {
+    padding: 20px 0;
+    position: relative;
+  }
+
+  &__submenu-item &__submenu-sub-item {
+    position: relative;
+    padding: 5px;
+  }
+
+  &__menu-item_has-child:hover > &__submenu {
+    display: block;
+  }
+
+  &__menu-item_has-child:hover > &__submenu-sub {
+    display: block;
+  }
+
+  &__menu-item_active &__menu-link {
+    color: var(--coral);
+    position: relative;
+  }
+
+  &__menu-item_active &__menu-link::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+    width: 150%;
+    height: 1px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__menu-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__submenu {
+    display: none;
+    position: absolute;
+    background: #333333;
+    top: 100%;
+    width: 150px;
+    padding-left: 25px;
+    border: 1px solid var(--coral);
+  }
+
+  &__submenu-sub {
+    display: none;
+    position: absolute;
+    background: rgb(246, 246, 242);
+    top: 0%;
+    padding: 2px;
+    width: 120px;
+    left: 100%;
+    border: 1px solid var(--coral);
+    background: #333333;
+  }
+
+  &__submenu-item {
+    padding: 10px;
+  }
+
+  &__submenu-link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__submenu-link:hover {
+    color: var(--coral);
+  }
+
+  &__submenu-link:hover {
+    opacity: 0.8;
+  }
+
+  &__menu-link:hover {
+    color: var(--coral);
+  }
+}
+
+.burger {
+  display: none;
+
+  @include breakpoint(md) {
+    margin-top: 28px;
+    display: flex;
+    margin-left: auto;
+  }
+}

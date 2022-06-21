@@ -1,0 +1,27 @@
+.prime-btn {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    color: inherit;
+    padding: 20px 0;
+    border: none;
+    text-decoration: none;
+    background: var(--coral);
+    /* width: 100%; */
+    color: #ffffff;
+}
+
+@media screen and (max-width:1200px) {
+    .prime-btn {
+        padding: 20px 50px;
+    }
+}
+
+.prime-btn:hover {
+    background: #AB4949;
+
+}

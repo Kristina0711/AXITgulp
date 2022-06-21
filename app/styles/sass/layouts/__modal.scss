@@ -1,0 +1,33 @@
+/* modalka */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__content {
+    /* background-color: #86878B; */
+    margin: 10% 20%;
+    padding: 20px;
+    /* border: 1px solid #333333; */
+    widows: 10%;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal__form-btn {
+    width: 100%;
+    padding: 20px 0;
+}
